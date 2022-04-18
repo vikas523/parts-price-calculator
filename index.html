@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>parts calculator</title>
+    <meta charset="UTF-8" />
+    <style>
+  body {
+  font-family: sans-serif;
+  margin:0;
+  padding: 0;
+  background-image: url("./images.jpg");
+   background-repeat: no-repeat;	 
+  background-size: 1440px 770px;
+}
+#app {
+  width: 50%;
+  margin-left: 500px ;
+  margin-top: 250px;
+}
+#color {
+  margin-left: 40px;
+  width: 185px;
+}
+   
+#width {
+  margin-left: 38px;
+}
+
+#height {
+  margin-left: 33px;
+}
+
+#wrinkles {
+  margin-left: 14px;
+  width: 185px;
+}
+ 
+#headRail {
+  width: 185px;
+}
+#total {
+  margin-left: 11px;
+}
+#submitBtn{
+  padding: 8px;
+  cursor: pointer;
+}
+     
+    </style>
+  </head>
+
+  <body>
+    <div id="app">
+    
+    <br>
+    
+    materialParts :
+    <select id="materialParts">
+      <option value="timber">timber</option>
+      <option  selected value="concrete">concrete</option>
+      <option value="aluminum">aluminum </option>
+      <option value="plaster">plaster </option>
+      <option value="metal">metal </option>
+
+    </select>
+    <br />
+    installPart :
+    <select id="installPart">
+      <option value="ceil">ceil </option>
+      <option selected value="wall">wall </option> 
+    </select>
+    <br />
+
+    WIdth: <input type="number" id="width" name="width" />
+    <br />
+    Height: <input type="number" id="height" name="height" />
+    
+    <br />
+   
+   
+    <button id="submitBtn">Calculate</button>
+    <br />
+    total price: <input disabled id="total" />
+  </div>
+</div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
